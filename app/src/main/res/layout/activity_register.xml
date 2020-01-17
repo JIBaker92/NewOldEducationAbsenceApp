@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/full_name" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -73,7 +73,7 @@
         android:autofillHints="@string/password"
         android:ems="10"
         android:hint="@string/password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword|textEmailAddress"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,8 +87,9 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/password"
         tools:text="@string/reg_btn" />
 
     <EditText
@@ -98,13 +99,27 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
+        android:autofillHints="@string/register_text"
         android:ems="10"
         android:inputType="textPersonName"
+        android:labelFor="@id/new_account_text"
         android:text="@string/need_to_register"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_btn" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_here_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

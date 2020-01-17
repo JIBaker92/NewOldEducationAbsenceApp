@@ -47,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/login_text" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -71,7 +71,7 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/password"
         tools:text="@string/reg_btn" />
 
     <TextView
