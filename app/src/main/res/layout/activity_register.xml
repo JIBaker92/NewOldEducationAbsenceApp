@@ -73,7 +73,7 @@
         android:autofillHints="@string/password"
         android:ems="10"
         android:hint="@string/password"
-        android:inputType="textPassword|textEmailAddress"
+        android:inputType="textWebEditText|textPassword|textEmailAddress|textWebPassword"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,6 +118,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_here_text" />

@@ -9,4 +9,7 @@
     <string name="already_registered">Already registered? Login here</string>
     <string name="need_to_register">Need an account? Register here</string>
     <string name="register_text">Need an account? Register here</string>
+    <string name="login_btn">Login</string>
+    <string name="logout_btn">Logout</string>
+    <string name="send_mail_btn">Send Mail</string>
 </resources>
